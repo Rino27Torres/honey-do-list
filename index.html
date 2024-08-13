@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Honey-Do List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Calistoga&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <section class='logged-out-view' id='logged-out-view'>
+    <h1 class="title">🐝 Honey-Do-List</h1>
+    <ul class="list-ideas">
+      <li>To-Do-List</li>
+      <li>Goals</li>
+      <li>Chores</li>
+      <li>Anything you want!</li>
+    </ul>
+
+    <h2>Log In For Full Access!!</h2>
+    <p>Don't have an account? Log in using our guest account!</p>
+    <h4 class="guest-info"><span>Email:</span> guest@temp.com</h4>
+    <h4 class="guest-info"><span>Password:</span> guest123</h4>
+
+    <div class="log-in-info">
+      <label for="email-input">Email:</label>
+      <input type="text" id="email-input" class="email-input">
+      <br>
+      <label for="password-input">Password:</label>
+      <input type="password" id="password-input" class="password-input">
+      <button class="login-button" id="login-button">Log In</button>
+    </div>
+  </section>
+
+  <section class='logged-in-view' id='logged-in-view'>
+    <nav>
+      <button id="sign-out-button" class="icon">
+        Sign Out ❌
+      </button>
+    </nav>
+
+    <div class="app-container">
+      <div class="user-section">
+        <h2 id="user-greeting"></h2>
+        <h1 class="title">🐝 Honey-Do List</h1>
+        <p>Start and keep track of your specialized list!</p>
+      </div>
+
+      <div class="post-section">
+        <input type="text" id="post-input" class="post-input"
+        placeholder="Add Item" />
+        <button id="post-btn" class="primary-btn">Add</button>
+      </div>
+    </div>
+
+    <div id="posts" class="posts-section">
+      <div class="post">
+        <div class="header"></div>
+    </div>
+
+  </section>
+
+  <script src="index.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,288 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+body {
+  background: #fff;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.logged-out-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow:
+      0 0 5px #8A2BE2,
+      0 0 5px #8A2BE2,
+      0 0 8px #8A2BE2,
+      0 0 12px #4B0082,
+      0 0 15px #4B0082,
+      0 0 18px #4B0082,
+      0 0 20px #0000FF,
+      0 0 22px #0000FF,
+      0 0 28px #0000FF,
+      0 0 30px #0000FF;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.logged-out-view h2 {
+  color: rgb(211, 12, 12);
+  font-size: 2.2rem;
+  margin-bottom: 0;
+}
+
+.logged-out-view p {
+  font-size: 1.2rem;
+}
+
+.list-ideas li {
+  font-size: 1.4rem;
+  margin-top: 0;
+  list-style: none;
+}
+
+.guest-info {
+  font-size: 1.2rem;
+  color: blue;
+  margin: 0;
+}
+
+.guest-info span {
+  color: rgb(211, 12, 12);
+  font-size: 1.3rem;
+  text-decoration: underline;
+}
+
+#logged-out-view {
+  display: none;
+}
+
+#logged-in-view {
+  display: none;
+  margin: 0;
+}
+
+/* Log in section */
+.log-in-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-top: 40px;
+  color: #fff;
+  padding: 30px 60px;
+  background-color: rgb(96, 61, 193);
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+.email-input,
+.password-input {
+  padding: 5px;
+  font-size: 1.2rem;
+  border: 2px solid;
+  border-radius: 8px;
+  text-indent: 5px;
+}
+
+.login-button {
+  margin-top: 25px;
+  padding: 10px;
+  background: black;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-button:hover {
+  background: rgb(63, 63, 63);
+}
+
+/* === Nav === */
+nav {
+  margin: 0.6em 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1.2rem;
+  width: 7em;
+}
+
+.icon-img-btn:hover {
+  filter: invert(0.5);
+}
+
+/* Logged in View */
+.logged-in-view {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.user-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8em;
+}
+
+.user-section p {
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+#user-greeting {
+  margin: 0;
+  margin-top: 10px;
+}
+
+/* Adding item */
+.post-input {
+  padding: 5px;
+  border: 2px solid white;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  box-shadow: 3px 3px 10px blueviolet;
+}
+
+.primary-btn {
+  padding: 5px 16px;
+  background: transparent;
+  border: 2px solid white;
+  box-shadow: 4px 4px 10px blueviolet;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  border: 2px solid black;
+}
+
+input,
+button {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: gray;
+  opacity: 1;
+  /* Firefox */
+}
+
+input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: gray;
+}
+
+input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: gray;
+}
+
+/* Post */
+.post {
+  padding: 5px 15px;
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+
+.post p {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.post .footer button {
+  font-size: 0.85em;
+  padding: 0.2em 0.8em;
+  position: relative;
+}
+
+.post .footer button:hover {
+  box-shadow: none;
+}
+
+.post .footer .edit-color {
+  background-color: #62EEA8;
+  cursor: pointer;
+  margin-bottom: 8px;
+  margin-left: 8px;
+}
+
+.post .footer .delete-color {
+  background-color: #FF9F9F;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.body-div {
+  width: 30%;
+  margin-right: 10px;
+}
+
+.header-date {
+  font-size: 0.9rem;
+}
+
+/* Media Queries */
+@media (min-width: 480px) {
+  .title {
+    font-size: 3.5rem;
+  }
+  .post p {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  .post .footer button {
+    font-size: 1.1rem;
+    padding: 0.2em 0.8em;
+    position: relative;
+  }
+  .header-date {
+    font-size: 1.1rem;
+  }
+}
